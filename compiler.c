@@ -270,7 +270,7 @@ int compile(expression e, instructions *instructs, symbols s, int stack_size) {
 
 		// Branch position is not yet known.
 		int branch_instruction_position = instructs->count;
-		push_instruction( instructs, (instruction){ is_branch });
+		push_instruction(instructs, (instruction){ is_branch });
 		stack_size--;
 
 		// Branches should join at the same point later on, right?
